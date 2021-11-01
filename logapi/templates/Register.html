@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+</head>
+<body>
+	<form method="POST" action="{% url='LogApi:loginSignup' %}"> {% csrf_token %}
+		{{form.as_table}}
+		<button type="submit">Register</button>
+	</form>
+</body>
+</html>
